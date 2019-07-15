@@ -1,0 +1,16 @@
+# Ignore everything
+*
+# Uningnore dotfiles
+!.bashrc
+!.bash_profile
+!.bash_prompt
+!.gitconfig
+!.gitignore
+!.gitignore_global
+!.gitmodules
+!.gituser-default
+!.gituser-atradius
+!.RProfile
+!.tmux.conf
+!.vimrc
+
