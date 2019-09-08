@@ -10,6 +10,7 @@
 !.gitmodules
 !.gituser-default
 !.gituser-atradius
+!.path
 !.RProfile
 !.tmux.conf
 !.vimrc

@@ -1,0 +1,18 @@
+#!/bin/sh
+
+# go path
+export GOPATH=${HOME}/.go
+export GOROOT=${HOME}/dev/github.com/goroot
+
+# update path
+export PATH=/usr/local/bin:${PATH}:/sbin
+
+# add go path
+export PATH="${GOROOT}/bin:${GOPATH}/bin:${PATH}"
+
+# packer path
+export PACKERPATH=${HOME}/dev/github/packer
+
+# add packer path
+export PATH="${PACKERPATH}/bin:$PATH"
+
