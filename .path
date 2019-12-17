@@ -3,12 +3,16 @@
 # go path
 export GOPATH=${HOME}/.go
 export GOROOT=${HOME}/dev/github.com/goroot
+export JULIAPATH=/usr/local/julia
 
 # update path
 export PATH=/usr/local/bin:${PATH}:/sbin
 
 # add go path
 export PATH="${GOROOT}/bin:${GOPATH}/bin:${PATH}"
+
+# add julia path
+export PATH="${JULIAPATH}/bin:${PATH}"
 
 # packer path
 export PACKERPATH=${HOME}/dev/github/packer
