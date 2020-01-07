@@ -1,6 +1,7 @@
 # Ignore everything
 *
 # Unignore dotfiles
+!.aliases
 !.bashrc
 !.bash_profile
 !.bash_prompt

@@ -117,7 +117,7 @@ if ! shopt -oq posix; then
 fi
 
 # Load .bashrc and other files...
-for file in ~/.{aliases,bash_prompt,functions,path}; do
+for file in ~/.{aliases,bash_prompt,extra,functions,path}; do
 	if [[ -r "$file" ]] && [[ -f "$file" ]]; then
 		# shellcheck source=/dev/null
 		source "$file"
