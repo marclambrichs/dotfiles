@@ -1,0 +1,12 @@
+setHook(
+    packageEvent("languageserver", "onLoad"),
+    function(...) {
+        options(languageserver.default_linters = lintr::with_defaults(
+            line_length_linter = lintr::line_length_linter(100),
+            object_usage_linter = NULL
+        ))
+    }
+)
+
+options(repos=structure(c(CRAN="https://lib.ugent.be/CRAN/")))
+options(prompt="R> ", digits=4, show.signif.stars=FALSE)
