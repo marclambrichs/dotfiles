@@ -12,7 +12,7 @@
     graph = log --graph --color --pretty=format:"%C(yellow)%H%C(green)%d%C(reset)%n%x20%cd%n%x20%cn%x20(%ce)%n%x20%s%n"
 
     # Show files part of HEAD
-    files = show --pretty="" --name-only
+    files = show --pretty="" --name-status
 
     unstage = reset --
 
