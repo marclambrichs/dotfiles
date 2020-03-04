@@ -56,3 +56,5 @@
     required = true
 [branch "merge"]
     optons = --no-ff
+[push]
+	default = simple
