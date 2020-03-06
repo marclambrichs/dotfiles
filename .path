@@ -11,6 +11,9 @@ export PATH=/usr/local/bin:${PATH}:/sbin
 # add go path
 export PATH="${GOROOT}/bin:${GOPATH}/bin:${PATH}"
 
+# add java path
+export JAVA_HOME=$(readlink -f /usr/bin/javac | sed "s:/bin/javac::")
+
 # add julia path
 export PATH="${JULIAPATH}/bin:${PATH}"
 
