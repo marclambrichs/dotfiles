@@ -1,0 +1,16 @@
+" No line wrapping
+set nowrap
+" Use 2 spaces for tab
+set tabstop=2
+" Use 2 spaces for soft tab
+set softtabstop=2
+" Expand tab to spaces
+set expandtab
+" Use 2 spaces for indentation
+set shiftwidth=2
+set smarttab
+
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
