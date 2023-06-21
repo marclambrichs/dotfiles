@@ -64,6 +64,10 @@ else
 fi
 
 link() {
+    if [ -e "${HOME}/${2}" ]; then
+        rm -f "${HOME}/${2}"
+    fi
+    
     # Force create/replace the symlink.
     ln -fs "${DOTFILES_DIRECTORY}/${1}" "${HOME}/${2}"
 }
@@ -78,20 +82,27 @@ mirrorfiles() {
     if [ -e "${HOME}/.vim" ]; then
         rm -rf "${HOME}/.vim"
     fi
+    # Force remove the zsh directory if it's already there.
+    if [ -e "${HOME}/.zsh" ]; then
+        rm -rf "${HOME}/.zsh"
+    fi
 
     # Create the necessary symbolic links between the `.dotfiles` and `HOME`
     # directory.
-    link "bash/bashrc"         ".bashrc"
-    #link "shell/bash_profile" ".bash_profile"
-    #link "shell/curlrc"       ".curlrc"
-    #link "shell/inputrc"      ".inputrc"
-    link "bash/bash_prompt"    ".bash_prompt"
-    link "git/gitattributes"   ".gitattributes"
-    link "git/gitignore"       ".gitignore"
-    link "git/gituser-default" ".gituser-default"
-    link "vim"                 ".vim"
-    #link "vim/gvimrc"         ".gvimrc"
-    link "vim/vimrc"           ".vimrc"
+    link "bash/bashrc"          ".bashrc"
+    link "bash/profile"         ".profile"
+    link "bash/bash_prompt"     ".bash_prompt"
+    link "git/gitattributes"    ".gitattributes"
+    link "git/gitconfig"        ".gitconfig"
+    link "git/gitignore"        ".gitignore"
+    link "git/gituser-default"  ".gituser-default"
+    link "git/gitignore_global" ".gitignore_global"
+    link "ohmyzsh"              ".oh-my-zsh"
+    link "tmux/tmux.conf"       ".tmux.conf"
+    link "vim"                  ".vim"
+    link "vim/vimrc"            ".vimrc"
+    link ".zshrc"               ".zshrc"
+    link "zsh"                  ".zsh"
 
     e_success "Dotfiles update complete!"
 }
