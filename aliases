@@ -45,3 +45,24 @@ alias tns='sh -c "cat ${ORACLE_HOME}/network/admin/tnsnames.ora"'
 
 # R - radian
 alias r="radian"
+
+# Elixir
+alias phx.migrate="MIX_ENV=dev mix do ecto.migrate, ecto.dump && MIX_ENV=test mix do ecto.drop, ecto.create, ecto.load"
+
+# Projects
+alias ml="cd ~/Developer/Projects/marclambrichs"
+alias 9to5="cd ~/Developer/Projects/marclambrichs/ninetofive"
+alias elix="cd ~/Developer/Projects/elixir"
+
+# DPG
+alias dpg="cd ~/Developer/Projects/customers/dpgmediagroup/my-channels/mychannels-elixir-vaas"
+alias mc_asset_api="cd /Users/mlambrichs/Developer/Projects/customers/dpgmediagroup/my-channels/mychannels-elixir-vaas/apps/mc_asset_api"
+alias mc_core="cd /Users/mlambrichs/Developer/Projects/customers/dpgmediagroup/my-channels/mychannels-elixir-vaas/apps/mc_core"
+alias mc_emma="cd /Users/mlambrichs/Developer/Projects/customers/dpgmediagroup/my-channels/mychannels-elixir-vaas/apps/mc_emma"
+alias mc_io="cd /Users/mlambrichs/Developer/Projects/customers/dpgmediagroup/my-channels/mychannels-elixir-vaas/apps/mc_io"
+alias mc_web="cd /Users/mlambrichs/Developer/Projects/customers/dpgmediagroup/my-channels/mychannels-elixir-vaas/apps/mc_web"
+alias mc_world_api="cd /Users/mlambrichs/Developer/Projects/customers/dpgmediagroup/my-channels/mychannels-elixir-vaas/apps/mc_world_api"
+alias aws.sso="aws sso login --profile dpg-administrator-cf"
+alias dpg.test.tunnel="./dbssm.sh -d test -p 5001"
+alias dpg.prod.tunnel="./dbssm.sh -d prod -p 5001"
+alias dpg.acc.tunnel="./dbssm.sh -d acc -p 5001" 

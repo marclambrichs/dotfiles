@@ -28,3 +28,7 @@ export PACKERPATH=${HOME}/dev/github/packer
 # add packer path
 export PATH="${PACKERPATH}/bin:$PATH"
 
+# nodepath
+export NODEPATH=${HOME}/.asdf/installs/nodejs/16.16.0/
+export PATH="${NODEPATH}/bin"
+

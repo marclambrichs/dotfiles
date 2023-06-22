@@ -1,0 +1,4 @@
+PATH_add /usr/local/opt/libxslt/bin
+export LDFLAGS="-L/usr/local/opt/libxslt/lib"
+export CPPFLAGS="-I/usr/local/opt/libxslt/include"
+export PKG_CONFIG_PATH="/usr/local/opt/libxslt/lib/pkgconfig"
