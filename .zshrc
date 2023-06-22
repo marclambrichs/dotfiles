@@ -101,3 +101,5 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 [ -f "/Users/mlambrichs/.ghcup/env" ] && source "/Users/mlambrichs/.ghcup/env" # ghcup-env
 eval "$(direnv hook zsh)"
+
+. /usr/local/opt/asdf/libexec/asdf.sh
