@@ -103,6 +103,7 @@ mirrorfiles() {
     link "git/gituser-default"         ".gituser-default"
     link "git/gitignore_global"        ".gitignore_global"
     link "ohmyzsh"                     ".oh-my-zsh"
+    link "path"                        ".path"
     link "ruby/default-gems"           ".default-gems"
     link "tmux/tmux.conf"              ".tmux.conf"
     link "vim"                         ".vim"
