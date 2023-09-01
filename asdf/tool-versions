@@ -3,6 +3,7 @@ awscli-local 0.21
 elixir 1.15.4-otp-26
 erlang 26.0.2
 git 2.41.0
+golang 1.21.0
 kubectl 1.27.3
 kubectx 0.9.4
 kubeseal 0.22.0
@@ -11,7 +12,7 @@ packer 1.9.2
 perl 5.38.0
 postgres 15.3
 pre-commit 3.3.3
-ruby 3.2.2
+ruby 2.7.5
 terraform 1.5.3
 tmux 3.3
 yarn 1.22.19

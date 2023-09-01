@@ -56,9 +56,11 @@ alias elix="cd ~/Developer/Projects/elixir"
 
 # DPG
 alias dpg="cd ~/Developer/Projects/customers/dpgmediagroup/my-channels/mychannels-elixir-vaas"
+alias god="cd ~/Developer/Projects/customers/dpgmediagroup/my-channels/godfather"
 alias mc_asset_api="cd /Users/mlambrichs/Developer/Projects/customers/dpgmediagroup/my-channels/mychannels-elixir-vaas/apps/mc_asset_api"
 alias mc_core="cd /Users/mlambrichs/Developer/Projects/customers/dpgmediagroup/my-channels/mychannels-elixir-vaas/apps/mc_core"
 alias mc_emma="cd /Users/mlambrichs/Developer/Projects/customers/dpgmediagroup/my-channels/mychannels-elixir-vaas/apps/mc_emma"
+alias mc-infra="cd /Users/mlambrichs/Developer/Projects/customers/dpgmediagroup/my-channels/mc-infra"
 alias mc_io="cd /Users/mlambrichs/Developer/Projects/customers/dpgmediagroup/my-channels/mychannels-elixir-vaas/apps/mc_io"
 alias mc_web="cd /Users/mlambrichs/Developer/Projects/customers/dpgmediagroup/my-channels/mychannels-elixir-vaas/apps/mc_web"
 alias mc_world_api="cd /Users/mlambrichs/Developer/Projects/customers/dpgmediagroup/my-channels/mychannels-elixir-vaas/apps/mc_world_api"
