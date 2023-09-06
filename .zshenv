@@ -1,12 +1,7 @@
 export EDITOR=vim
 export PAGER=less
 export KERNEL_NAME=$(uname|tr '[:upper:]' '[:lower:]')
-ASDF_GOLANG_MOD_VERSION_ENABLED=true
-
-
-# add asdf path
-ASDF_PATH="${HOME}/.asdf"
-PATH="${ASDF_PATH}/shims:${PATH}"
+export ASDF_GOLANG_MOD_VERSION_ENABLED=true
 
 # add docker path
 PATH="${HOME}/.docker/bin:${PATH}"

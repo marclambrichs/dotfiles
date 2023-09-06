@@ -2,3 +2,14 @@ PATH_add /usr/local/opt/libxslt/bin
 export LDFLAGS="-L/usr/local/opt/libxslt/lib"
 export CPPFLAGS="-I/usr/local/opt/libxslt/include"
 export PKG_CONFIG_PATH="/usr/local/opt/libxslt/lib/pkgconfig"
+
+# Usage: use ruby <version>
+#
+# Loads the specified ruby version into the environment
+#
+use_ruby() {
+  echo "use ruby $1"
+  local ruby_dir=$HOME/.rubies/$1
+  load_prefix $ruby_dir
+  layout ruby
+}
