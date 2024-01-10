@@ -60,5 +60,3 @@
     path = ~/Developer/Projects/Atradius/.gitconfig
 [push]
     default = simple
-[http]
-	sslCAInfo = /Users/mlambrichs/.zcli/zscaler_root.pem
