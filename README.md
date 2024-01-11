@@ -1,5 +1,17 @@
 # Comments
 
+## oh-my-zsh
+
+You need to install Powerline fonts to show the correct path.
+
+```
+# cd powerline/fonts
+# sh install.sh
+```
+
+Next, change your profile in iterm2. Select `text` tab in profile and then tick
+`Use built-in Powerline glyphs`.
+
 ## Ruby
 
 `ruby-install` is installed with brew. Next

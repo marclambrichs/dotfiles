@@ -7,3 +7,6 @@
 [submodule "ohmyzsh"]
 	path = ohmyzsh
 	url = git@github.com:marclambrichs/ohmyzsh.git
+[submodule "powerline/fonts"]
+	path = powerline/fonts
+	url = https://github.com/powerline/fonts.git
