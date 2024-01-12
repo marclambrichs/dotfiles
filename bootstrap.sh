@@ -82,6 +82,8 @@ mirrorfiles() {
     if [ -e "${HOME}/.vim" ]; then
         rm -rf "${HOME}/.vim"
     fi
+    # Create new - empty - .vim directory
+    mkdir "${HOME}/.vim"
     # Force remove the zsh directory if it's already there.
     if [ -e "${HOME}/.zsh" ]; then
         rm -rf "${HOME}/.zsh"
@@ -105,7 +107,8 @@ mirrorfiles() {
     link "ohmyzsh"                     ".oh-my-zsh"
     link "ruby/default-gems"           ".default-gems"
     link "tmux/tmux.conf"              ".tmux.conf"
-    link "vim"                         ".vim"
+    link "vim/vim-pathogen/autoload"   ".vim/autoload"
+    link "vim/bundle"                  ".vim/bundle"
     link "vim/vimrc"                   ".vimrc"
     link ".zshrc"                      ".zshrc"
     link ".zshenv"                     ".zshenv"

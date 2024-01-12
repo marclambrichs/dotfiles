@@ -1,21 +1,30 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$HOME/bin:$PATH:/usr/bin:/usr/local/bin
+# asdf
+export PATH=$HOME/.asdf/shims:$PATH
+# rust
+export PATH=$PATH:$HOME/.asdf/installs/rust/1.75.0/bin
+source $HOME/.asdf/installs/rust/1.75.0/env
+# java
+export JAVA_HOME=/opt/homebrew/opt/openjdk
 
 # Path to your oh-my-zsh installation.
-export ZSH="$HOME/Developer/Projects/marclambrichs/dotfiles/ohmyzsh"
+export ZSH="$HOME/Development/marclambrichs/dotfiles/ohmyzsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="robbyrussell"
+DEFAULT_USER="mlambrichs"
+prompt_context(){}
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
 # If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -107,4 +116,3 @@ autoload -Uz compinit && compinit
 
 [ -f "/Users/mlambrichs/.ghcup/env" ] && source "/Users/mlambrichs/.ghcup/env" # ghcup-env
 eval "$(direnv hook zsh)"
-
