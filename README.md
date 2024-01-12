@@ -52,6 +52,7 @@ Install the following plugins:
 > asdf install postgres latest
 ```
 
+<<<<<<< HEAD
 ## git-date
 
 `>< npm install git-date -g`
@@ -74,6 +75,11 @@ Install Docker Desktop for Mac
 > asdf install awscli latest
 > asdf install awscli-local latest
 ```
+=======
+### git-date
+
+`npm install git-date -g`
+>>>>>>> c0a2a9c (Add git-date)
 
 ## ruby
 
