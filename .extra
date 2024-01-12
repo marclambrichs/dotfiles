@@ -1,4 +1,0 @@
-#!/bin/bash
-
-alias atr="cd /home/mlambrichs/dev/customers/Atradius"
-alias atrcl="atr; cd ifrs17-cloud-test"
