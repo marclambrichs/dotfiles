@@ -7,8 +7,8 @@ export ASDF_GOLANG_MOD_VERSION_ENABLED=true
 PATH="${HOME}/.docker/bin:${PATH}"
 
 # add go path
-export GOPATH=/Users/mlambrichs/.asdf/installs/golang/1.21.0/packages
-export GOROOT=/Users/mlambrichs/.asdf/installs/golang/1.21.0/go
+export GOPATH=/Users/mlambrichs/.asdf/installs/golang/1.21.6/packages
+export GOROOT=/Users/mlambrichs/.asdf/installs/golang/1.21.6/go
 export GOPROXY="https://lambri000:cmVmdGtuOjAxOjE3MjMyOTUyMTE6RUs2amlrMVk5eEJBT1JJQnE3YXFPR0JEbjhV"
 export GONOSUMDB="persgroep.cloud/*"
 PATH="${GOROOT}/bin:${GOPATH}/bin:${PATH}"
@@ -20,7 +20,7 @@ export JAVA_HOME=$(readlink -f /usr/bin/javac | sed "s:/bin/javac::")
 PATH="/usr/local/julia/bin:${PATH}"
 
 # add node path
-PATH="${HOME}/.asdf/installs/nodejs/16.16.0/bin:${PATH}"
+PATH="${HOME}/.asdf/installs/nodejs/21.4.0/bin:${PATH}"
 
 # add oracle
 export ORACLE_HOME=~/.oracle
@@ -31,7 +31,7 @@ PATH=$PATH:${ORACLE_HOME}/bin
 PATH="${HOME}/dev/github/packer/bin:${PATH}"
 
 # add godfather path
-PATH=${ASDF_PATH}/installs/elixir/1.15.4-otp-26/.mix/escripts:${PATH}
+PATH=${ASDF_PATH}/installs/elixir/1.16.0-otp-26/.mix/escripts:${PATH}
 
 # remove duplicate entries from $PATH
 # zsh uses $path array along with $PATH
