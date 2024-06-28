@@ -58,7 +58,9 @@ run_brew() {
             'tmux'
             'tree'
             'unixodbc'
+            'unzip'
             'wget'
+            'wxmac'
             'wxwidgets'
         )
 

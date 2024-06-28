@@ -44,18 +44,17 @@ Install the following plugins:
 
 ### examples
 ```
-> export KERL_CONFIGURE_OPTIONS="--with-odbc --without-javac --without-wx --with-ssl=$(brew --prefix openssl@1.1)"
+> export KERL_CONFIGURE_OPTIONS="--with-odbc=/opt/homebrew/Cellar/unixodbc/2.3.12 --with-ssl=$(brew --prefix openssl@1.1)"
 > export KERL_BUILD_DOCS=1
-> asdf install erlang 26.0.2
+> CC="/usr/bin/gcc -I/opt/homebrew/Cellar/unixodbc/2.3.12/include -L/opt/homebrew/Cellar/unixodbc/2.3.12/lib" asdf install erlang 26.2.1
 
 > export POSTGRES_EXTRA_CONFIGURE_OPTIONS="--with-uuid=e2fs --without-icu --with-openssl --with-libraries=/usr/local/lib:$(brew --prefix openssl@1.1)/lib --with-includes=/usr/local/include:$(brew --prefix openssl@1.1)/include"
 > asdf install postgres latest
 ```
 
-<<<<<<< HEAD
 ## git-date
 
-`>< npm install git-date -g`
+`> npm install git-date -g`
 
 ## R
 
@@ -75,11 +74,6 @@ Install Docker Desktop for Mac
 > asdf install awscli latest
 > asdf install awscli-local latest
 ```
-=======
-### git-date
-
-`npm install git-date -g`
->>>>>>> c0a2a9c (Add git-date)
 
 ## ruby
 
