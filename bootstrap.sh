@@ -84,6 +84,8 @@ mirrorfiles() {
     fi
     # Create new - empty - .vim directory
     mkdir "${HOME}/.vim"
+    # Create new - empty - .config directory
+    mkdir -p "${HOME}/.config/direnv"
     # Force remove the zsh directory if it's already there.
     if [ -e "${HOME}/.zsh" ]; then
         rm -rf "${HOME}/.zsh"
@@ -97,7 +99,7 @@ mirrorfiles() {
     link "bash/bashrc"                 ".bashrc"
     link "bash/profile"                ".profile"
     link "bash/bash_prompt"            ".bash_prompt"
-    link "direnv"                      ".config/direnv" 
+    link "direnv/direnvrc"             ".config/direnv/direnvrc" 
     link "elixir/default-mix-commands" ".default-mix-commands"
     link "git/gitattributes"           ".gitattributes"
     link "git/gitconfig"               ".gitconfig"

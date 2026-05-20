@@ -16,6 +16,15 @@ PATH="${GOROOT}/bin:${GOPATH}/bin:${PATH}"
 # add erlang settings
  export ERL_AFLOGS="-kernel shell_history enabled"
 
+# add icu4 settings
+ICU4_HOME="/opt/homebrew/opt/icu4c@78"
+PATH="$PATH:${ICU4_HOME}/bin:${ICU4_HOME}/sbin"
+export LDFLAGS="-L${ICU4_HOME}/lib"
+export CPPFLAGS="-I${ICU4_HOME}/include"
+
+# add postgres config options
+export POSTGRES_EXTRA_CONFIGURE_OPTIONS="--with-uuid=e2fs --with-icu --with-openssl --with-libraries=/usr/local/lib:$(brew --prefix openssl@3)/lib --with-includes=/usr/local/include:$(brew --prefix openssl@3)/include"
+
 # add java path
 export JAVA_HOME=$(readlink -f /usr/bin/javac | sed "s:/bin/javac::")
 

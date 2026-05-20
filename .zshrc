@@ -4,8 +4,8 @@ export PATH=$HOME/bin:$PATH:/usr/bin:/usr/local/bin
 # asdf
 export PATH=$HOME/.asdf/shims:$PATH
 # rust
-export PATH=$PATH:$HOME/.asdf/installs/rust/1.75.0/bin
-source $HOME/.asdf/installs/rust/1.75.0/env
+export PATH=$PATH:$HOME/.asdf/installs/rust/1.95.0/bin
+source $HOME/.asdf/installs/rust/1.95.0/env
 # java
 export JAVA_HOME=/opt/homebrew/opt/openjdk
 
@@ -80,7 +80,7 @@ ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(aws git)
+plugins=(aws direnv git)
 
 source $ZSH/oh-my-zsh.sh
 
